@@ -25,6 +25,12 @@ class TestFizzBuzzer(unittest.TestCase) :
         fizzbuzzer = Fizzbuzzer()
         result = fizzbuzzer.evaluate(6)
         self.assertEqual(result, "Fizz")
-
+    def test_buzz_output_for_10(self):
+        """
+        Test that when given a number divisible by 5 but not 5 it returns Buzz
+        """
+        fizzbuzzer = Fizzbuzzer()
+        result = fizzbuzzer.evaluate(10)
+        self.assertEqual(result, "Buzz")
 if __name__ == '__main__':
     unittest.main()
